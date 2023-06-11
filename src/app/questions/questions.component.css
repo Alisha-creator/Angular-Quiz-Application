@@ -1,0 +1,73 @@
+.card{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+    height: fit-content;
+}
+li{
+    list-style-type: none;
+    cursor: pointer;
+    margin: 10px 0;
+}
+li .card:hover{
+    border: 1px solid blue;
+}
+ol{
+    padding: 0;
+}
+
+.content{
+    height: 510px;
+    width: 625px;
+    margin: auto;
+    background-color: #fff;
+    margin-top: 50px;
+    position: relative;
+    border-radius: 10px;
+}
+.content::after{
+    content: '';
+    position: absolute;
+    width: 213px;
+    height: 233px;
+    background: url(https://us.123rf.com/450wm/misterpict/misterpict2006/misterpict200600301/149835178-you-did-it-on-white-background.jpg?ver=6);
+    background-size: cover;
+    top: -158px;
+    left: 200px;
+}
+.name{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 45px;
+}
+.name span{
+    font-weight: bold;
+    font-size: 45px;
+    padding-bottom: 10px;
+    color: #2e4057;
+
+}
+.name p{
+    font-size: 25px;
+    color: #999;
+}
+hr{
+    width: 586px;
+    position: absolute;
+    top: 150px;
+    left: 20px;
+    border-color: #e1dbdb69;
+}
+.box{
+    background-color: #eee;
+    padding: 10px;
+    width: 585px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    border-radius: 15px;
+}

@@ -1,0 +1,193 @@
+{
+    "Questions": [
+      {
+        "Quiz": "Q.1) Which file is responsible for startup of angular 2 project ?",
+        "options":[{
+          "text" : "main.ts",
+          "correct" : true
+        },
+        {
+          "text" : "index.js"
+        },
+        {
+          "text" : "app.ts"
+        },
+        {
+          "text" : "angular.cli.json"
+        }
+      ],
+        "explanation" : "main.ts file is responsible for startup of angular 2 project."
+      },
+      
+      {
+        "Quiz": "Q.2) Which of the following is correct about TypeScript?",
+        "options":[{
+          "text" : "Angular is based on TypeScript."
+        },
+        {
+          "text" : "This is a superset of JavaScript."
+        },
+        {
+          "text" : "TypeScript is maintained by Microsoft"
+        },
+        {
+          "text" : "All of the above.",
+          "correct" : true
+        }
+      ],
+        "explanation" : "Angular is based on TypeScript.It is superset of JavaScript and mainatined by Microsoft."
+      },
+
+      {
+        "Quiz": "Q.3) What is .subscribe?",
+        "options":[{
+          "text" : "Streams data in asynchronously"
+        },
+        {
+          "text" : "Streams data in synchronously"
+        },
+        {
+          "text" : "Both",
+          "correct" : true
+        },
+        {
+          "text" : "None of above"
+        }
+      ],
+        "explanation" : ".subscribe Streams data in asynchronously and synchronously."
+      },
+
+      {
+        "Quiz": "Q.4) What does AOT stand for?",
+        "options":[{
+          "text" : "Ahead-Of-Time Compilation",
+          "correct" : true
+        },
+        {
+          "text" : "Angular Object Templates"
+        },
+        {
+          "text" : "Both"
+        },
+        {
+          "text" : "None of above"
+        }
+      ],
+        "explanation" : "All of the above."
+      },
+
+      {
+        "Quiz": "Q.5) Which of the following is not a hook application life cycle?",
+        "options":[{
+          "text" : "ngOnChanges"
+        },
+        {
+          "text" : "ngViewStart",
+          "correct" : true
+        },
+        {
+          "text" : "ngOnInit"
+        },
+        {
+          "text" : "None of the above"
+        }
+      ],
+        "explanation" : "ngViewStart is not a hook application life cycle."
+      },
+
+      {
+        "Quiz": "Q.6) Router is part of which of the following module?",
+        "options":[{
+          "text" : "@angular/core"
+        },
+        {
+          "text" : "@angular/router",
+          "correct" : true
+        },
+        {
+          "text" : "Both"
+        },
+        {
+          "text" : "None of the above"
+        }
+      ],
+        "explanation" : "Router is part of @angular/router module."
+      },
+
+      {
+        "Quiz": "Q.7) RxJS can be used for?",
+        "options":[{
+          "text" : "Browser"
+        },
+        {
+          "text" : "Server Side"
+        },
+        {
+          "text" : "Both",
+          "correct" : true
+        },
+        {
+          "text" : "None of the above"
+        }
+      ],
+        "explanation" : "RxJS can be used for both serer side and browser."
+      },
+
+      {
+        "Quiz": "Q.8) Which angular decorator allows us to define the pipe name that is globally available for use in any template in the across application?",
+        "options":[{
+          "text" : "pipeName"
+        },
+        {
+          "text" : "pipeDeco"
+        },
+        {
+          "text" : "Pipe",
+          "correct" : true
+        },
+        {
+          "text" : "None of the above"
+        }
+      ],
+        "explanation" : "Pipe decorator allows us to define the pipe name that is globally available for use in any template in the across application"
+      },
+
+      {
+        "Quiz": "Q.9) What is the decorator used for configuring your module class?",
+        "options":[{
+          "text" : "@NgModule",
+          "correct" : true
+        },
+        {
+          "text" : "@NgApp"
+        },
+        {
+          "text" : "Both"
+        },
+        {
+          "text" : "None of the above"
+        }
+      ],
+        "explanation" : "@NgModule is the decorator used for configuring your module class."
+      },
+
+      {
+        "Quiz": "Q.10) What is used .angular-cli.json",
+        "options":[{
+          "text" : "Used to link external files"
+        },
+        {
+          "text" : "Used to configure your angular 2 project",
+          "correct" : true
+        },
+        {
+          "text" : "used to install required project packages"
+        },
+        {
+          "text" : "None of the above"
+        }
+      ],
+        "explanation" : "Used to configure your angular 2 project."
+      }
+    ]
+  }

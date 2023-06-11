@@ -1,0 +1,18 @@
+.footer{
+    background: #000;
+    width: auto;
+    padding: 5px 0;
+    text-align: center;
+}
+.footer p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+    color: white;
+}
+.footer span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+    color:#fff;
+}

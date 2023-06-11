@@ -1,0 +1,42 @@
+h3  {
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 600;
+    color: #378de5;
+}
+h1 {
+     font-family: 'Poppins', sans-serif;
+     text-transform: uppercase;
+     font-weight: 700;
+     margin-top: 40px;
+     letter-spacing: .1em;
+     font-size: 53px;
+     color: #1641cf;
+}
+
+h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    margin-top: 10px;
+    letter-spacing: .2em;
+    color: #65aaee;
+ }
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: .1em;
+    margin-top: 50px;
+    color: #378de5;
+ }
+
+.banner {
+	background: url("../../assets/images/banner_image.jpg")
+		no-repeat center/cover;
+	height: 50vh;
+	display: grid;
+    padding-right: 5%;
+    padding-left: 3%;
+}

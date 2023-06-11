@@ -1,0 +1,26 @@
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	border: none;
+	outline: none;
+	color: inherit;
+	list-style: none;
+}
+
+header {
+	position: sticky;
+	top: 0;
+	background: white;
+	z-index: 1;
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	padding: 1.5em 2em;
+	box-shadow: 0 0 20px 0 black;
+}
+
+nav {
+	display: flex;
+	gap: 1em;
+}

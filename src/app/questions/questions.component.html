@@ -1,0 +1,77 @@
+<div class="container mt-5 mb-5">
+    <div class="card">
+        <ng-container *ngIf="!isQuizCompleted">
+        <div class="d-flex justify-content-between p-3">
+            <div class="image">
+                <img src="https://d8it4huxumps7.cloudfront.net/uploads/images/d2c-images/d2c-online-quizzes.svg" alt="quiz_logo" width="80" height="60">
+            </div>
+            <div class="quiz-header">
+                <h4 style="font-family: cursive;">Angular Quiz</h4>
+                <span style="font-style: italic;">Welcome {{user_name}}</span>
+            </div>
+        </div>
+        
+            <div class="d-flex justify-content-around py-3">
+                <div class="score">
+                    <h5>{{score_points}} points</h5>
+                </div>
+                <div class="question-remaining">
+                    <span style="font-style: italic;">Question {{currentQuestion+1}} of {{quiz_questionsList.length}}</span>
+                </div>
+                <div class="timer">
+                    <h5>{{counter}} sec</h5>  
+                </div>
+            </div>
+            <div class="progress mb-3">
+                <div class="progress-bar progress-bar-striped bg-success" role="progressbar" [ngStyle]="{'width': progress_bar+'%'}" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <div class="questions">
+                <div class="card">
+                    <h3>{{quiz_questionsList[currentQuestion].Quiz}}</h3>
+                </div>
+            </div>
+            <div class="options">
+                <ol *ngFor="let option of quiz_questionsList[currentQuestion].options">
+                    <li (click)  = "answer(currentQuestion+1,option)">
+                        <div appBackgroundChange [isCorrect] = "option.correct" class="card">
+                            {{option.text}}
+                        </div>
+                    </li>
+                </ol>
+            </div>
+            <div class="d-flex justify-content-between">
+                <button [disabled]="currentQuestion===0" class="btn" (click) = "previousQuestion()"><i class="fa text-primary fa-chevron-left fa-3x" area-hidden="true"></i></button>
+                <button class="btn" (click) = "resetQuiz()"><i class="fa text-primary fa-refresh fa-3x" area-hidden="true"></i></button>
+                <button [disabled]="currentQuestion===9" class="btn" (click) = "nextQuestion()"><i class="fa text-primary fa-chevron-right fa-3x" area-hidden="true"></i></button>
+            </div>
+        </ng-container>
+
+        <ng-container *ngIf="isQuizCompleted">
+            <div class="content">
+                <div class="name">
+                    <span>Congratulations</span>
+                    <p>{{user_name}}</p>
+                </div>
+                <hr>
+                <div class="box">
+                    <span>Your Score : </span>
+                    <p>{{score_points}}</p>
+                 </div>
+                <div class="box">
+                    <span>Total Questions Attempted :</span>
+                    <p>{{quiz_questionsList.length}}</p>
+                </div>
+                <div class="box">
+                    <span> Total Correct Answers : </span>
+                    <p>{{correctAnswer}}</p>
+                </div>
+                <div class="box">
+                   <span>Total Wrong Answers : </span>
+                   <p>{{incorrectAnswer}}</p>
+                </div>
+            </div>
+        </ng-container>
+    </div>
+</div>
+
+<app-footer></app-footer>
